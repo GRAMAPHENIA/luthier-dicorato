@@ -1,0 +1,98 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+
+<meta charset="UTF-8" />
+<meta
+  name="Di corato 🎸 Lutier"
+  content="Este es un breve resumen de un ejemplo de descripcion"
+/>
+<meta name="viewport" content="width=device-width" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+
+<body>
+  <slot />
+</body>
+
+<style is:global>
+  @font-face {
+    font-family: "Atkinson";
+    src: url("/fonts/atkinson-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Atkinson";
+    src: url("/fonts/atkinson-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --fondo-dark: #21272c;
+    --fuente-light: #ffe7df;
+  }
+
+  html,
+  body {
+    font-family: Atkinson;
+    background: var(--fondo-dark);
+    color: var(--fuente-light);
+  }
+
+  nav {
+    padding-top: 10px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  li {
+    padding-inline: 10px;
+  }
+
+  /* 🔴 DATA TOOLTIP 🔴 */
+
+  .tooltip-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .element::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .element:hover::before {
+    display: block;
+    opacity: 1;
+  }
+
+  
+</style>
