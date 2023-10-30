@@ -7,7 +7,7 @@
     />
   </figure>
   <figure class="fotos">
-    <img src="/logos/logo.png" alt="logo de marca" />
+    <img class="logo-marca" src="/logos/logo.png" alt="logo de marca" />
   </figure>
   <figure class="fotos">
     <img
@@ -28,5 +28,17 @@
   .fotos img {
     max-width: 100%;
     height: auto;
+  }
+
+  @media (max-width: 767px) {
+    .guitarra {
+      display: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .logo-marca {
+      margin-top: 8rem;
+    }
   }
 </style>
