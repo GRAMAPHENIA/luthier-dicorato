@@ -8,7 +8,7 @@ const { title } = Astro.props;
 
 <meta charset="UTF-8" />
 <meta
-  name="Di corato 🎸 Lutier"
+  name="Di corato 🎸 Luthier"
   content="Este es un breve resumen de un ejemplo de descripcion"
 />
 <meta name="viewport" content="width=device-width" />
@@ -37,23 +37,20 @@ const { title } = Astro.props;
   }
 
   :root {
-    --fondo-dark: #0E1319;
+    /* --fondo-dark: #0e1319; */
+    --fondo-dark: #101112;
     --fuente-light: #dff0ff;
   }
 
   html,
   body {
+    margin: 0;
+    box-sizing: border-box;
     font-family: Atkinson;
     background: var(--fondo-dark);
     color: var(--fuente-light);
   }
 
-  nav {
-    margin: 0;
-    padding: 1rem 2rem 0 0;
-    display: flex;
-    justify-content: right;
-  }
 
   ul {
     display: flex;
@@ -61,7 +58,7 @@ const { title } = Astro.props;
   }
 
   li {
-    padding-inline: 10px;
+    padding: 0 10px;
   }
 
   /* 🔴 DATA TOOLTIP 🔴 */
