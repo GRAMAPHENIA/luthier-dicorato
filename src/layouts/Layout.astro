@@ -51,7 +51,6 @@ const { title } = Astro.props;
     color: var(--fuente-light);
   }
 
-
   ul {
     display: flex;
     list-style-type: none;
@@ -88,5 +87,18 @@ const { title } = Astro.props;
   .element:hover::before {
     display: block;
     opacity: 1;
+  }
+
+  /* 🟠  SCROLL  🟠 */
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #1c202a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: salmon;
+    border-radius: 5px;
   }
 </style>

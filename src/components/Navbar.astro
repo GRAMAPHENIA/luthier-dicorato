@@ -8,7 +8,7 @@ import Facebook from "../iconos/Facebook.astro";
   <figure>
     <img
       class="logo-s"
-      src="../../public/logos/logo.png"
+      src="/logos/logo.png"
       alt="Imgen del logo de Di corato luthier"
     />
   </figure>
@@ -18,7 +18,7 @@ import Facebook from "../iconos/Facebook.astro";
     <li class="nav-li">Acerca de</li>
     <li class="nav-li">Contacto</li>
   </ul>
-  <ul>
+  <ul class="iconos">
     <li class="tooltip-container nav-li">
       <span class="element" data-tooltip="Guitarras"><Pua /></span>
     </li>
@@ -64,6 +64,10 @@ import Facebook from "../iconos/Facebook.astro";
 
   .logo-s {
     height: 60px;
+  }
+
+  .iconos {
+    margin-right: 2rem;
   }
 
   @media (max-width: 1420px) {
