@@ -22,10 +22,12 @@
 
 <section class="parrafo">
   <p>
-    Mi trabajo se caracteriza por valorar los recursos nativos y el cuidado
-    minucioso del uso de los materiales, donde la selección de excelentes
-    maderas recuperadas o recicladas afianzan mi concepto del cuidado del medio
-    ambiente.
+    Mi trabajo se caracteriza por valorar los <span>recursos nativos</span> y el
+    cuidado minucioso del uso de los materiales, donde la <span>selección</span>
+     de excelentes
+    <span>maderas</span> recuperadas o recicladas afianzan mi <span
+      >concepto</span
+    > del <span>cuidado</span> del medio ambiente.
   </p>
 </section>
 
@@ -42,11 +44,20 @@
   }
 
   .parrafo {
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem 32rem;
+    margin: 5rem 10rem;
+    padding: 3rem 10rem;
+    border-radius: 1rem;
     text-align: center;
+    background-color: #20252d84;
+    border: 1px solid #566378e0;
+  }
+
+  span {
+    color: salmon;
   }
 
   @media (max-width: 767px) {
@@ -57,7 +68,15 @@
 
   @media (max-width: 767px) {
     .logo-marca {
-      margin-top: 8rem;
+      margin-top: 4rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .parrafo {
+      text-align: center;
+      margin: 5rem 2.5rem;
+      padding: 3rem 3rem;
     }
   }
 </style>
