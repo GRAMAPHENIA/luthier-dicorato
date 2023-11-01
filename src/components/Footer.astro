@@ -1,58 +1,90 @@
 <footer>
-    <ul>
-      <li><h1>Navegación</h1></li>
-      <li>Inicio</li>
-      <li>Instrumentos</li>
-      <li>Nosotros</li>
-    </ul>
-
-    <ul>
-      <li><h1>Contacto</h1></li>
-      <li>Instagram</li>
-      <li>Facebook</li>
-      <li>Youtube</li>
-    </ul>
-
-    <ul>
-      <li><h1>Adicional</h1></li>
-      <li>Marcas</li>
-      <li>Otro elemento</li>
-    </ul>
-
-    <ul>
-      <li><h1>Informativo</h1></li>
-      <li>Boletín</li>
-      <li>Blog</li>
-    </ul>
-
-    <ul>
-      <li><h1>Interés</h1></li>
-      <li>Sitio uno</li>
-      <li>Sitio dos</li>
-    </ul>
-
-    <ul>
-      <li><h1>Mapa del sitio</h1></li>
-      <li>Link</li>
-    </ul>
-  </footer>
-
-  <style>
-    footer {
-      display: flex;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      margin: 0;
-    }
-
-    ul {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
-
-    li {
-        margin: 0;
-    }
-  </style>
+  <div class="container">
+    <section class="column">
+      <!-- <h3>Di corato Luthier</h3> -->
+      <img src="/logos/logo.png" alt="" />
+      <p>Jose Marmol. <br />Buenos Aires. <br />Argentina.</p>
+    </section>
+    <section class="column">
+      <h3>Navegación</h3>
+      <ul>
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+      </ul>
+    </section>
+    <section class="column">
+      <h3>De interes</h3>
+      <ul>
+        <li><a href="#">Enlace A</a></li>
+        <li><a href="#">Enlace B</a></li>
+        <li><a href="#">Enlace C</a></li>
+      </ul>
+    </section>
+    <section class="column">
+      <h3>Contactos</h3>
+      <p>Telefono: 11 5463-7450</p>
+      <p>Dirección: Gral. José J. Arias 939</p>
+      <p>Email: dicoratoluthier@gmail.com</p>
+    </section>
+  </div>
 </footer>
+
+<style>
+  footer {
+    background-color: #12161bb4;
+    color: #fff;
+    padding: 20px;
+    border-top: 2px dotted #1c262fb4;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    flex: 0 0 calc(25% - 40px);
+    padding: 0 10px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #879db3;
+    text-decoration: none;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .column {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+</style>
