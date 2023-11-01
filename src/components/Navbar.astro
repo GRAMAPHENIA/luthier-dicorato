@@ -20,7 +20,7 @@ import Phone from "../iconos/Phone.astro";
     <li class="nav-li">Contacto</li>
   </ul>
   <ul class="iconos">
-    <li class="tooltip-container nav-li">
+    <li class="tooltip-container nav-li menu">
       <span class="element" data-tooltip="Menu"
         ><a href=""></a> <Pua /></span
       >
@@ -91,6 +91,16 @@ import Phone from "../iconos/Phone.astro";
     bottom: 1rem;
     right: 1rem;
     user-select: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 1420px) {
+    .menu {
+      display: block;
+    }
   }
 
   @media (max-width: 1420px) {
