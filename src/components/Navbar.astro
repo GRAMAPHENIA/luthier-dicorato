@@ -2,6 +2,7 @@
 import Pua from "../iconos/Pua.astro";
 import Instagram from "../iconos/Instagram.astro";
 import Facebook from "../iconos/Facebook.astro";
+import Phone from "../iconos/Phone.astro";
 ---
 
 <nav>
@@ -31,6 +32,10 @@ import Facebook from "../iconos/Facebook.astro";
   </ul>
 </nav>
 
+<section class="contacto">
+  <a href=""> <Phone /></a>
+</section>
+
 <style>
   nav {
     margin: 0;
@@ -45,6 +50,10 @@ import Facebook from "../iconos/Facebook.astro";
     backdrop-filter: blur(10px);
     background-color: #111418e3;
     border-bottom: 2px dotted #283141a3;
+  }
+
+  a {
+    color: #dff0ff;
   }
 
   ul {
@@ -68,6 +77,17 @@ import Facebook from "../iconos/Facebook.astro";
 
   .iconos {
     margin-right: 2rem;
+  }
+
+  .contacto {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #232a34e3;
+    backdrop-filter: blur(10px);
+    padding: 10px 10px 0 10px;
+    border-radius: 50%;
+    border: 2px solid #405065fc;
   }
 
   @media (max-width: 1420px) {
