@@ -1,0 +1,121 @@
+<section class="tarjeta-container">
+  <section class="tarjeta">
+    <figure class="contenedor">
+      <div class="imagen-contenedor">
+        <img
+          src="/buconero/cuerpo.png"
+          alt="Descripción de la imagen"
+          class="imagen-tapar"
+        />
+      </div>
+      <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
+    </figure>
+  </section>
+  <section class="tarjeta">
+    <figure class="contenedor">
+      <div class="imagen-contenedor">
+        <img
+          src="/velluto/cuerpo.png"
+          alt="Descripción de la imagen"
+          class="imagen-tapar"
+        />
+      </div>
+      <p class="texto-oculto"><span>Modelo:</span> Velluto</p>
+    </figure>
+  </section>
+  <section class="tarjeta">
+    <figure class="contenedor">
+      <div class="imagen-contenedor">
+        <img
+          src="/buconero/cuerpo.png"
+          alt="Descripción de la imagen"
+          class="imagen-tapar"
+        />
+      </div>
+      <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
+    </figure>
+  </section>
+  <section class="tarjeta">
+    <figure class="contenedor">
+      <div class="imagen-contenedor">
+        <img
+          src="/buconero/cuerpo.png"
+          alt="Descripción de la imagen"
+          class="imagen-tapar"
+        />
+      </div>
+      <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
+    </figure>
+  </section>
+</section>
+
+<style>
+  p {
+    font-size: 16px;
+  }
+  span {
+    color: salmon;
+    font-size: 16px;
+  }
+
+  .tarjeta-container {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 1300px) {
+    .tarjeta-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .tarjeta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .contenedor {
+    position: relative;
+  }
+
+  .imagen-contenedor {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    background: #12161bb4;
+    border-bottom: 2px dotted #304d70;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .imagen-tapar {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 1;
+    transition:
+      opacity 0.3s,
+      transform 0.3s;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .texto-oculto {
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .imagen-contenedor:hover .imagen-tapar {
+    transform: translateY(-50px);
+  }
+
+  .imagen-contenedor:hover + .texto-oculto {
+    opacity: 1;
+  }
+</style>
