@@ -1,60 +1,67 @@
-<section class="tarjeta-container">
-  <section class="tarjeta">
-    <figure class="contenedor">
-      <div class="imagen-contenedor">
-        <img
-          src="/buconero/completa.png"
-          alt="Descripción de la imagen"
-          class="imagen-tapar"
-        />
-      </div>
-      <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
-    </figure>
-    <button class="detalles">Detalles</button>
-  </section>
+<div class="container">
+  <section class="tarjeta-container">
+    <section class="tarjeta">
+      <figure class="contenedor">
+        <div class="imagen-contenedor">
+          <img
+            src="/buconero/completa.png"
+            alt="Descripción de la imagen"
+            class="imagen-tapar"
+          />
+        </div>
+        <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
+      </figure>
+      <button class="detalles">Detalles</button>
+    </section>
 
-  <section class="tarjeta">
-    <figure class="contenedor">
-      <div class="imagen-contenedor">
-        <img
-          src="/velluto/completa.png"
-          alt="Descripción de la imagen"
-          class="imagen-tapar"
-        />
-      </div>
-      <p class="texto-oculto"><span>Modelo:</span> Velluto</p>
-    </figure>
-    <button class="detalles">Detalles</button>
+    <section class="tarjeta">
+      <figure class="contenedor">
+        <div class="imagen-contenedor">
+          <img
+            src="/velluto/completa.png"
+            alt="Descripción de la imagen"
+            class="imagen-tapar"
+          />
+        </div>
+        <p class="texto-oculto"><span>Modelo:</span> Velluto</p>
+      </figure>
+      <button class="detalles">Detalles</button>
+    </section>
+
+    <section class="tarjeta">
+      <figure class="contenedor">
+        <div class="imagen-contenedor">
+          <img
+            src="/eira/cuerpo.png"
+            alt="Descripción de la imagen"
+            class="imagen-tapar"
+          />
+        </div>
+        <p class="texto-oculto"><span>Modelo:</span> Eira</p>
+      </figure>
+      <button class="detalles">Detalles</button>
+    </section>
+    <section class="tarjeta">
+      <figure class="contenedor">
+        <div class="imagen-contenedor">
+          <img
+            src="/eira/cuerpo.png"
+            alt="Descripción de la imagen"
+            class="imagen-tapar"
+          />
+        </div>
+        <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
+      </figure>
+      <button class="detalles">Detalles</button>
+    </section>
   </section>
-  <section class="tarjeta">
-    <figure class="contenedor">
-      <div class="imagen-contenedor">
-        <img
-          src="/eira/cuerpo.png"
-          alt="Descripción de la imagen"
-          class="imagen-tapar"
-        />
-      </div>
-      <p class="texto-oculto"><span>Modelo:</span> Eira</p>
-    </figure>
-    <button class="detalles">Detalles</button>
-  </section>
-  <section class="tarjeta">
-    <figure class="contenedor">
-      <div class="imagen-contenedor">
-        <img
-          src="/eira/cuerpo.png"
-          alt="Descripción de la imagen"
-          class="imagen-tapar"
-        />
-      </div>
-      <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
-    </figure>
-    <button class="detalles">Detalles</button>
-  </section>
-</section>
+</div>
 
 <style>
+  .container {
+    background: #20252d84;
+    padding: 3rem 0;
+  }
   span {
     color: salmon;
   }
@@ -64,7 +71,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
-    padding-bottom: 5rem;
+    padding: 5rem;
   }
 
   @media (max-width: 1300px) {
@@ -92,6 +99,7 @@
     background: #12161bb4;
     border-bottom: 3px solid #36496086;
     border-radius: 1rem 1rem 0 0;
+    border: 2px solid #283141;
   }
 
   .imagen-tapar {
