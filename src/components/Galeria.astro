@@ -10,7 +10,9 @@
       </div>
       <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
     </figure>
+    <button class="detalles">Detalles</button>
   </section>
+
   <section class="tarjeta">
     <figure class="contenedor">
       <div class="imagen-contenedor">
@@ -22,40 +24,39 @@
       </div>
       <p class="texto-oculto"><span>Modelo:</span> Velluto</p>
     </figure>
+    <button class="detalles">Detalles</button>
   </section>
   <section class="tarjeta">
     <figure class="contenedor">
       <div class="imagen-contenedor">
         <img
-          src="/buconero/cuerpo.png"
+          src="/eira/cuerpo.png"
+          alt="Descripción de la imagen"
+          class="imagen-tapar"
+        />
+      </div>
+      <p class="texto-oculto"><span>Modelo:</span> Eira</p>
+    </figure>
+    <button class="detalles">Detalles</button>
+  </section>
+  <section class="tarjeta">
+    <figure class="contenedor">
+      <div class="imagen-contenedor">
+        <img
+          src="/eira/cuerpo.png"
           alt="Descripción de la imagen"
           class="imagen-tapar"
         />
       </div>
       <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
     </figure>
-  </section>
-  <section class="tarjeta">
-    <figure class="contenedor">
-      <div class="imagen-contenedor">
-        <img
-          src="/buconero/cuerpo.png"
-          alt="Descripción de la imagen"
-          class="imagen-tapar"
-        />
-      </div>
-      <p class="texto-oculto"><span>Modelo:</span> Buconero</p>
-    </figure>
+    <button class="detalles">Detalles</button>
   </section>
 </section>
 
 <style>
-  p {
-    font-size: 16px;
-  }
   span {
     color: salmon;
-    font-size: 16px;
   }
 
   .tarjeta-container {
@@ -73,6 +74,7 @@
 
     .tarjeta {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -88,7 +90,7 @@
     height: 300px;
     overflow: hidden;
     background: #12161bb4;
-    border-bottom: 2px dotted #304d70;
+    border-bottom: 2px solid #36496086;
     border-radius: 1rem 1rem 0 0;
   }
 
@@ -105,11 +107,33 @@
 
   .texto-oculto {
     position: absolute;
-    bottom: 0;
+    bottom: 2px;
     left: 25px;
     z-index: 0;
     opacity: 0;
     transition: opacity 0.2s;
+  }
+
+  .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detalles {
+    background: #2e3c4ad3;
+    border: none;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 10px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+
+  .detalles:hover {
+    background: #3d566ed3;
   }
 
   .imagen-contenedor:hover .imagen-tapar {
