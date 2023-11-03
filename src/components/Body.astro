@@ -1,25 +1,25 @@
 <section id="inicio">
-  <figure class="fotos">
+  <!-- <figure class="fotos">
     <img
       class="guitarra"
       src="/buconero/left.png"
       alt="Frente de guitarra electrica buconero"
     />
-  </figure>
+  </figure> -->
 
   <figure class="fotos">
     <img class="logo-marca" src="/logos/logo.png" alt="logo de marca" />
   </figure>
 
-  <figure class="fotos">
+  <!-- <figure class="fotos">
     <img
       class="guitarra"
       src="/buconero/right.png"
       alt="Revés de guitarra electrica buconero"
     />
-  </figure>
+  </figure> -->
 </section>
-
+<h1 class="bounce">↡</h1>
 <section class="parrafo">
   <p>
     Mi trabajo se caracteriza por valorar los <span>recursos nativos</span> y el
@@ -32,6 +32,11 @@
 </section>
 
 <style>
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
   section {
     display: flex;
     justify-content: center;
@@ -41,6 +46,7 @@
   .fotos img {
     max-width: 100%;
     height: auto;
+    margin-top: 6rem;
   }
 
   .parrafo {
@@ -48,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5rem 10rem;
+    margin: 15rem 10rem;
     padding: 3rem 10rem;
     border-radius: 1rem;
     text-align: center;
@@ -60,19 +66,32 @@
     color: var(--span);
   }
 
+  .bounce {
+    animation: bounce 3s infinite cubic-bezier(0.64, 0, 0.36, 0.64);
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(
+        -20px
+      ); /* Ajusta la altura del rebote según tu preferencia */
+    }
+  }
+
   @media (max-width: 767px) {
     .guitarra {
       display: none;
     }
-  }
-
-  @media (max-width: 767px) {
     .logo-marca {
       margin-top: 4rem;
     }
-  }
-
-  @media (max-width: 767px) {
     .parrafo {
       text-align: center;
       margin: 5rem 2.5rem;
