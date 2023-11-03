@@ -20,13 +20,14 @@ import Pua from "../iconos/Pua.astro";
 </div>
 
 <style>
-  .modalDialog {
+ .modalDialog {
+    height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    padding-bottom: 50rem;
+    padding-bottom: 0; /* Elimina el padding */
     background: #09090e;
     z-index: 5;
     opacity: 0;
@@ -34,7 +35,9 @@ import Pua from "../iconos/Pua.astro";
     -moz-transition: opacity 200ms ease-in;
     transition: opacity 200ms ease-in;
     pointer-events: none;
-  }
+    overflow: hidden;
+}
+
   .modalDialog:target {
     opacity: 1;
     pointer-events: auto;
