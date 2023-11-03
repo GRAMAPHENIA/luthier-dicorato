@@ -11,7 +11,10 @@ const { title } = Astro.props;
   name="Di corato 🎸 Luthier"
   content="Fabricando instrumentos acústicos y eléctricos boutique desde 2010 en la ciudad de José Mármol, Buenos Aires. Argentina"
 />
-<meta name="keywords" content="dicorato, custom, luthier, boutique, construcción de instrumentos, guitarras, bajos, artesanal, handmade, guitars, bass, cuerda pulsada">
+<meta
+  name="keywords"
+  content="dicorato, custom, luthier, boutique, construcción de instrumentos, guitarras, bajos, artesanal, handmade, guitars, bass, cuerda pulsada"
+/>
 <meta name="viewport" content="width=device-width" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
@@ -38,9 +41,12 @@ const { title } = Astro.props;
   }
 
   :root {
-    /* --fondo-dark: #0e1319; */
     --fondo-dark: #101112;
     --fuente-light: #dff0ff;
+    --fondo-parrafo: #20252d84;
+    --borde-parrafo: #283141a3;
+    --span: #fa8072;
+    --nav-dark: #111418e3;
   }
 
   html,
@@ -50,9 +56,8 @@ const { title } = Astro.props;
     font-family: Atkinson;
     background: var(--fondo-dark);
     color: var(--fuente-light);
+    scroll-behavior: smooth;
   }
-
-  
 
   ul {
     display: flex;
@@ -96,9 +101,10 @@ const { title } = Astro.props;
 
   ::-webkit-scrollbar {
     width: 8px;
+    height: 0px;
   }
   ::-webkit-scrollbar-track {
-    background-color: #1c202a;
+    background-color: var(--fondo-dark);
   }
   ::-webkit-scrollbar-thumb {
     background-color: salmon;

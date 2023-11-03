@@ -14,10 +14,10 @@ import Phone from "../iconos/Phone.astro";
     />
   </figure>
   <ul class="secciones">
-    <li class="nav-li">Inicio</li>
+    <li class="nav-li"><a href="#inicio">Inicio</a></li>
     <li class="nav-li">Instrumentos</li>
-    <li class="nav-li" title="Nosotros">Nosotros</li>
-    <li class="nav-li">Contacto</li>
+    <li class="nav-li">Nosotros</li>
+    <li class="nav-li"><a href="#contacto">Contacto</a></li>
   </ul>
   <ul class="iconos">
     <li class="tooltip-container nav-li menu">
@@ -53,7 +53,7 @@ import Phone from "../iconos/Phone.astro";
     width: 100%;
     max-width: 100%;
     backdrop-filter: blur(10px);
-    background-color: #111418e3;
+    background-color: var(--nav-dark);
     border-bottom: 2px dotted #283141a3;
     z-index: 3;
   }
